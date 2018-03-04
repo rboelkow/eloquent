@@ -1,0 +1,1 @@
+for (var i = 0, output = "#"; i < 7; console.log(output), i++, output += "#");
