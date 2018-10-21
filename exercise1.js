@@ -23,20 +23,14 @@ When you have that working, modify your program to print "FizzBuzz" for numbers 
 var current = 0
 while  (current < 100) {
     current ++;
-    switch (current) {
-        case (current % 3 == 0) && (current % 5 == 0):
-        console.log("FizzBuzz");
-        break;
-        case (current % 3 == 0):
-        console.log("Fizz");
-        break;
-        case (current % 5 == 0):
-        console.log("Buzz");
-        break;
-        default:
-        console.log(current);
-        break;
-    }
+    if ((current % 3 == 0) && (current % 5 == 0)){        
+        console.log("FizzBuzz");}
+    else if (current % 3 == 0){
+        console.log("Fizz");}
+    else if (current % 5 == 0){
+    console.log("Buzz");}
+    else {
+    console.log(current);}
 }
 
 /* EX 3A
