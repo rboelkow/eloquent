@@ -46,8 +46,6 @@ Passing this string to console.log should show something like this:
 of the given width and height.
 */
 
-- offset line 
-
 function chessmaker (gridsize){
     oddLine = "", evenLine = "", fullgrid = "", gridprint = gridsize
     while (gridsize > 0) {
@@ -74,6 +72,5 @@ function chessmaker (gridsize){
         }
 
     }
-    console.log(fullgrid)
+    return fullgrid
 }
-
