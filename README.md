@@ -1,5 +1,3 @@
 # eloquent
-<h3>Characters can be escaped using a backslash.</h3>
-Special commands are
-    - newline \n
-    -   
+<h4>Notes</h3>
+    Adding a new line with escaped character: newline \n
