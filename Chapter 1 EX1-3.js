@@ -14,6 +14,39 @@ for (var i = 0, output = "#"; i < 7; console.log(output), i++, output += "#");
 // book recommends to use .len property, iterating over the length of the output would change the code to be like
 for (var i = 0, output = "#"; output.length < 7; console.log(output), i++, output += "#");
 
+// added function for issue 1
+function beersito(pyramido) {
+    i = 0, output = '';
+    while (i < 7){
+        output += String(pyramido);
+        console.log(output);
+        i ++;
+    }
+    return output;
+}
+
+// test for beersito
+testcasevar1 = Math.floor((Math.random() * 100) + 1);
+testcase1 = beersito(testcasevar1)
+if (testcase1.length % 7 === 0) {
+    console.log("Test 1/3 passed.")
+} else {
+    console.log("Test 1/3 failed.")
+}
+
+if (testcase1.length / String(testcasevar1).length === 7) {
+    console.log("Test 2/3 passed.")
+} else {
+    console.log("Test 2/3 failed.")
+}
+
+if (testcase1.slice(0 , String(testcasevar1).length) === String(testcasevar1)) {
+    console.log("Test 3/3 passed.")
+} else {
+    console.log("Test 3/3 failed.")
+}
+
+
 /* EX 2
 FizzBuzz
 Write a program that uses console.log to print all the numbers from 1 to 100, with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.
